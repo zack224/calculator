@@ -1,0 +1,91 @@
+*{ margin: 0; padding: 0; font-family: cursive; box-sizing: border-box;}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background: url('calc-bg.jpg') no-repeat center center/cover;
+    display: grid;
+    place-items: center;
+}
+
+.main_calc{
+    min-height: 482px;
+    width: auto;
+    margin: 10px;
+    background: linear-gradient(90deg, rgb(37, 37, 214) , rgb(124, 189, 211));
+    border: 2px solid blue;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.heading{
+    padding-top: 31px;
+    text-shadow: 3px 3px 3px grey;
+
+}
+
+.inp-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.num{
+    padding: 8px;
+    margin: 5px;
+    outline: none;
+    border-radius: 9px;
+    border: 2px solid rgb(114, 214, 245);
+    transition: all 0.2s linear;
+}
+
+.num:focus{
+    box-shadow: 2px 2px 3px 1px rgb(114, 214, 245) , -2px -2px 3px 1px rgb(114, 214, 245);
+}
+
+input::placeholder{
+    color: grey;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn{
+    margin: 5px;
+    height: 41px;
+    width: 89px;
+    color: rgb(58, 228, 214);
+    background-color: white;
+    outline: none;
+    border: 1px solid rgb(58, 228, 214);
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px 1px rgb(73, 170, 162);
+    transition: all 0.2s linear;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: rgb(58, 228, 214);
+    color: white;
+    box-shadow: -2px -2px 1px 1px rgb(73, 170, 162);
+}
+
+.ans-container{
+    margin-top: 23px;
+}
+
+#ans{
+    font-weight: bold;
+    color: azure;
+    text-shadow: 3px 3px 3px grey;
+    text-transform: capitalize;
+}
